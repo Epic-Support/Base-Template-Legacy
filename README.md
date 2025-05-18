@@ -1,10 +1,12 @@
 # Base-Template-Legacy
-Base Template Legacy, Double job version : 1.12.4 Es_Extended
 
 Vous trouverez dessus :
-Cette base contient tous l'essentiel pour construire son propre serveur !
 
-Si vous trouvez des bugs n'hésitez pas à nous en faire part sur : https://discord.gg/freetz Nous essayerons de faire environ 1 update par mois !
+Cette base contient tous l'essentiel pour construire son propre serveur !
+Voici ma base Template sous l'inventaire OX_inventory pour FiveM sous le framework ESX Legacy version 1.12.4
+Une nouvelle version pour Es_extended 1.12.4 > 1.12.5 Seras disponible et mise a jour dans la template.
+
+Si vous trouvez des bugs n'hésitez pas à nous en faire part sur : https://discord.gg/P6WxV4y2VX
 
 Mon Serveur Communautaire, Sk-Gaming : https://discord.gg/4t9qadvqBt
 
