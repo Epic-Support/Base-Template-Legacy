@@ -1,6 +1,11 @@
 # Base-Template-Legacy
 Base Template Legacy, Double job version : 1.12.4 Es_Extended
 
+Vous trouverez dessus :
+Cette base contient tous l'essentiel pour construire son propre serveur !
+
+Si vous trouvez des bugs n'hésitez pas à nous en faire part sur : https://discord.gg/freetz Nous essayerons de faire environ 1 update par mois !
+
 Mon Serveur Communautaire, Sk-Gaming : https://discord.gg/4t9qadvqBt
 
 
