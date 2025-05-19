@@ -15,4 +15,5 @@ Mon Serveur Communautaire, Sk-Gaming : https://discord.gg/4t9qadvqBt
 
 Hébergeur CalistaHost : https://discord.gg/P6WxV4y2VX
 
-![fb80914b-b6cb-474c-b095-0e882cbbc48b](https://github.com/user-attachments/assets/9dcec041-bd9e-4ec3-a84e-dcceaefa933f)
+
+![fb80914b-b6cb-474c-b095-0e882cbbc48b](https://github.com/user-attachments/assets/dafa4679-fbfb-4fcb-b471-9ea27e4b7040)
