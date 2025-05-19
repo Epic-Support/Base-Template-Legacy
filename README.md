@@ -10,9 +10,9 @@ Si vous trouvez des bugs n'hésitez pas à nous en faire part sur : https://disc
 
 Mon Serveur Communautaire, Sk-Gaming : https://discord.gg/4t9qadvqBt
 
+![fb80914b-b6cb-474c-b095-0e882cbbc48b](https://github.com/user-attachments/assets/64a923f9-5211-49ef-835c-aa045f5837f5)
 
 
 
 Hébergeur CalistaHost : https://discord.gg/P6WxV4y2VX
 
-![Uploading fb80914b-b6cb-474c-b095-0e882cbbc48b.png…]()
