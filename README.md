@@ -15,7 +15,7 @@ Si vous trouvez des bugs n'hésitez pas à nous en faire part sur : ⬇️
 ![fb80914b-b6cb-474c-b095-0e882cbbc48b](https://github.com/user-attachments/assets/dafa4679-fbfb-4fcb-b471-9ea27e4b7040)
 
 
-Mon Serveur Communautaire, Sk-Gaming ➥ https://discord.gg/4t9qadvqBt
+𝗠𝗼𝗻 𝗦𝗲𝗿𝘃𝗲𝘂𝗿 𝗖𝗼𝗺𝗺𝘂𝗻𝗮𝘂𝘁𝗮𝗶𝗿𝗲, 𝗦𝗸-𝗚𝗮𝗺𝗶𝗻𝗴 ➥ https://discord.gg/4t9qadvqBt
 
 ![fbc1d6ac-30d4-4d70-bb5a-b8d5d0ab93a5](https://github.com/user-attachments/assets/bfba9285-6a5e-43e9-abcd-5e040ddc875a)
 
