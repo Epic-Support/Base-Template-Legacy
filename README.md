@@ -8,7 +8,7 @@ Une nouvelle version pour Es_extended 1.12.4 > 1.12.5 Seras disponible et mise a
 
 Si vous trouvez des bugs n'hésitez pas à nous en faire part sur : ⬇️
 
-𝙃𝙚́𝙗𝙚𝙧𝙜𝙚𝙪𝙧 𝘾𝙖𝙡𝙞𝙨𝙩𝙖𝙃𝙤𝙨𝙩 : https://discord.gg/P6WxV4y2VX
+𝙃𝙚́𝙗𝙚𝙧𝙜𝙚𝙪𝙧 𝘾𝙖𝙡𝙞𝙨𝙩𝙖𝙃𝙤𝙨𝙩 : ➦ https://discord.gg/P6WxV4y2VX
 
 ![fb80914b-b6cb-474c-b095-0e882cbbc48b](https://github.com/user-attachments/assets/dafa4679-fbfb-4fcb-b471-9ea27e4b7040)
 
