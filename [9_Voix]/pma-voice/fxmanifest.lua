@@ -13,7 +13,6 @@ lua54 'yes'
 shared_script 'shared.lua'
 
 client_scripts {
-	'@bl_bridge/imports/client.lua',
 	'client/utils/*',
 	'client/init/proximity.lua',
 	'client/init/init.lua',
@@ -24,7 +23,6 @@ client_scripts {
 }
 
 server_scripts {
-	'@bl_bridge/imports/server.lua',
 	'server/**/*.lua',
 	'server/**/*.js'
 }

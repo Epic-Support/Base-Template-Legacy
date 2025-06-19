@@ -4,16 +4,16 @@ Config.MaxDistance = 2.5
 Config.Debug = false
 
 Config.Visual = {
-	icon = 'fa fa-chair',
-	label = 'S"asseoir',
-	notification = 'voici quelqu/un sur cette chaise',
-	error = 'Vous êtes déjà assis ici !'
+	icon = 'fas fa-chair',
+	label = 'sit',
+	notification = 'There is someone in this chair',
+	error = 'You are already sitting here!'
 }
 
 Config.Keyboard = 'x'
 
 Config.Sitable = {
-	--Only verticalOffset works right now! 
+	--Only verticalOffset works right now!
 	--all scenarios: pastebin.com/6mrYTdQv
 	
 	-- BENCH

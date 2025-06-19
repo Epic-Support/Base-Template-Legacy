@@ -19,23 +19,23 @@ submixIndicies = {}
 ---@param volumeType string the volume type (currently radio & call) to set the volume of (opt)
 function setVolume(volume, volumeType)
 	type_check({ volume, "number" })
-	local volume = volume / 100
+	local volumeFraction = volume / 100
 
 	if volumeType then
 		local volumeTbl = volumes[volumeType]
 		if volumeTbl then
 			LocalPlayer.state:set(volumeType, volume, true)
-			volumes[volumeType] = volume
-			resyncVolume(volumeType, volume)
+			volumes[volumeType] = volumeFraction
+			resyncVolume(volumeType, volumeFraction)
 		else
 			error(('setVolume got a invalid volume type %s'):format(volumeType))
 		end
 	else
 		for volumeType, _ in pairs(volumes) do
-			volumes[volumeType] = volume
+			volumes[volumeType] = volumeFraction
 			LocalPlayer.state:set(volumeType, volume, true)
 		end
-		resyncVolume("all", volume)
+		resyncVolume("all", volumeFraction)
 	end
 end
 
@@ -43,13 +43,13 @@ exports('setRadioVolume', function(vol)
 	setVolume(vol, 'radio')
 end)
 exports('getRadioVolume', function()
-	return volumes['radio']
+	return volumes['radio'] * 100
 end)
 exports("setCallVolume", function(vol)
 	setVolume(vol, 'call')
 end)
 exports('getCallVolume', function()
-	return volumes['call']
+	return volumes['call'] * 100
 end)
 
 
@@ -138,6 +138,7 @@ function toggleVoice(plySource, enabled, moduleType)
 	logger.verbose('[main] Updating %s to talking: %s with submix %s', plySource, enabled, moduleType)
 	local distance = currentTargets[plySource]
 	if enabled and (not distance or distance > 4.0) then
+		print(volumes[moduleType])
 		MumbleSetVolumeOverrideByServerId(plySource, enabled and volumes[moduleType])
 		if GetConvarInt('voice_enableSubmix', 1) == 1 then
 			if moduleType then
@@ -216,7 +217,7 @@ end
 ---plays the mic click if the player has them enabled.
 ---@param clickType boolean whether to play the 'on' or 'off' click.
 function playMicClicks(clickType)
-	if micClicks ~= 'true' then return logger.verbose("Not playing mic clicks because client has them disabled") end
+	if micClicks ~= true then return logger.verbose("Not playing mic clicks because client has them disabled") end
 	-- TODO: Add customizable radio click volumes
 	sendUIMessage({
 		sound = (clickType and "audio_on" or "audio_off"),
@@ -260,9 +261,8 @@ function setVoiceProperty(type, value)
 			radioEnabled = value
 		})
 	elseif type == "micClicks" then
-		local val = tostring(value)
-		micClicks = val
-		SetResourceKvp('pma-voice_enableMicClicks', val)
+		micClicks = value == true or value == "true"
+		SetResourceKvp('pma-voice_enableMicClicks', tostring(micClicks))
 	end
 end
 
@@ -289,22 +289,22 @@ end)
 
 
 if gameVersion == 'redm' then
-	CreateThread(function()
-		while true do
-			if IsControlJustPressed(0, 0xA5BDCD3C --[[ Right Bracket ]]) then
-				ExecuteCommand('cycleproximity')
-			end
-			if IsControlJustPressed(0, 0x430593AA --[[ Left Bracket ]]) then
-				ExecuteCommand('+radiotalk')
-			elseif IsControlJustReleased(0, 0x430593AA --[[ Left Bracket ]]) then
-				ExecuteCommand('-radiotalk')
-			end
+	function on_key_up() end
 
-			Wait(0)
-		end
-	end)
+	local KEY_F11 = 0x7A
+
+	RegisterRawKeymap("pma-voice_proximityCycle", on_key_up, function()
+		ExecuteCommand('cycleproximity')
+	end, KEY_F11, true)
+
+	local KEY_LEFT_ALT = 0xA4
+
+	RegisterRawKeymap("pma-voice_radioTalk", function()
+			ExecuteCommand('+radiotalk')
+	end, function()
+			ExecuteCommand('-radiotalk')
+	end, KEY_LEFT_ALT, true)
 end
-
 
 --- handles initializiation for whenever radio or call data changes
 --- calls should always be last because they're assumed to always be enabled so
